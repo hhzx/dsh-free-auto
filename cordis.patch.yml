@@ -1,0 +1,5 @@
+# dsh-free-auto bundle patch.
+- insert:
+    - id: free-auto
+      name: 'dsh-free-auto'
+      config: {}

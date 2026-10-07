@@ -1,0 +1,51 @@
+{
+  "name": "dsh-free-auto",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Free Auto — dsh 免费池速度优先自动选线；浮动 Dock（用量/命中、一键切换、线路排名）。",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhzx/dsh-free-auto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hhzx/dsh-free-auto/issues"
+  },
+  "homepage": "https://github.com/hhzx/dsh-free-auto#readme",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "LICENSE",
+    "package.json"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "free-model",
+    "auto-router",
+    "fallback"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  }
+}
